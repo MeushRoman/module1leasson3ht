@@ -7,13 +7,15 @@ void main()
 {
 	setlocale(LC_ALL, "Rus");
 
-	int n;
+	int n=0;
 
-	printf("Введие номер задания ");
-	scanf("%d", &n);
+	/*printf("Введие номер задания ");
+	scanf("%d", &n);*/
 	
 	do
 	{
+		printf("Введие номер задания ");
+		scanf("%d", &n);
 		
 
 		if (n == 1) {
@@ -46,8 +48,8 @@ void main()
 			scanf("%f", &b);
 
 				if (a != 0) {
-					x = -b / x;
-					printf("x = %f", x);
+					x = -b / a;
+					printf("x = %f\n", x);
 				}
 				else {
 					printf("значение А должно быть больше 0\n");
