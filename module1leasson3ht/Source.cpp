@@ -127,9 +127,72 @@ void main()
 					scanf("%f", &x1);
 					printf("y = ");
 					scanf("%f", &y1);
+					printf("Введите координаты 2 точки x = ");
+					scanf("%f", &x2);
+					printf("y = ");
+					scanf("%f", &y2);
 
-					printf("z = ", x1 + y1);
+					printf("z = %.2f\n", sqrt(pow((x1 - x2),2) + pow((y1 - y2),2)));
 				}
+				else if (n == 7) {
+					printf("7.	Известны объем и масса тела. Определить плотность материала этого тела\n");
+
+					float v, m;
+
+					printf("V = ");
+					scanf("%f", &v);
+
+					printf("m = ");
+					scanf("%f", &m);
+
+					printf("Плотность = %.2f\n", m / v);				
+				}
+				else if (n == 8) {
+					
+					printf("a.	вычисления значения функции z= x^3 – 2.5xy+1.87x^2+1 при любых значениях х и y;\n");
+					
+					float x, y, a, b;
+
+					printf("x = ");
+					scanf("%f", &x);
+
+					printf("y = ");
+					scanf("%f", &y);
+
+					printf("z = %.2f\n", pow(x, 3) - 2.5 * x*y + 1.87 * pow(x, 2) + 1);
+
+					printf("b.вычисления значения функции x = 3.56 a + b3 - 5.8b2 + 3.8a - 1.5 при любых значениях a и b.\n");
+					
+					printf("a = ");
+					scanf("%f", &a);
+
+					printf("b = ");
+					scanf("%f", &b);
+
+					printf("x = %.2f\n", 3.56 * a + pow(b, 3) - 5.8*pow(b, 2) + 3.8*a - 1.5);
+
+				}  
+				else if (n == 9) {
+					printf("9.	Дана сторона квадрата. Найти его периметр\n");
+
+					int a = 0, p;
+
+					printf("Сторона квадрата = ");
+					scanf("%d", &a);
+
+					printf("Периметр = %d\n", 4 * a);	
+				}
+				else if (n == 10) {
+					printf("10.	Дан радиус окружности.Найти ее диаметр.\n");
+
+					float r;
+
+					printf("r = ");
+					scanf("%f", &r);
+
+					printf("d = %.2f\n", 2 * r);
+				}
+				
 	
 
 	} while (n>0);
